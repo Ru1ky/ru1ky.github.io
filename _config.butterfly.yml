@@ -51,9 +51,11 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
+  #https://fontawesome.com/icons?from=io
   fa-brands fa-github: https://github.com/ru1ky || Github
   fa-brands fa-steam: https://steamcommunity.com/id/ru1ky || Steam
   fa-brands fa-telegram: https://t.me/cat_tery || Telegram
+  
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
@@ -64,17 +66,17 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: r2.ru1ky.top/avatar.jpg
+  img: https://r2.ru1ky.top/avatar.jpg
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: r2.ru1ky.top/banner.png
+default_top_img: https://r2.ru1ky.top/banner.jpg
 
 # The banner image of index page
-index_img:  r2.ru1ky.top/banner.png
+index_img:  https://r2.ru1ky.top/banner.jpg
 
 # The banner image of archive page
 archive_img:
@@ -96,11 +98,11 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: transparent
 
 # Website Background
 # Can set it to color or image url
-background:
+background: https://r2.ru1ky.top/star-background-transparent.png
 
 cover:
   # Disable the cover or not
@@ -108,7 +110,7 @@ cover:
   aside_enable: true
   archives_enable: true
   # When cover is not set, the default cover is displayed
-  default_cover:
+  default_cover: https://r2.ru1ky.top/default-cover-cp.jpg
     # - xxx.jpg
 
 # Replace Broken Images
@@ -126,7 +128,7 @@ post_meta:
   # Home Page
   page:
     # Choose: created / updated / both
-    date_type: created
+    date_type: both
     # Choose: date / relative
     date_format: date
     categories: true
@@ -156,7 +158,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -172,6 +174,10 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - 垃圾桶怎么开满了鲜花？
+    - 你好，我喜欢你
+    - 来都来了，留个comment好不好w
+    
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -181,7 +187,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 3
+index_layout: 1
 
 # Display the article introduction on homepage
 # 1: description
@@ -189,7 +195,7 @@ index_layout: 3
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   # If you set method to 2 or 3, the length need to config
   length: 500
 
@@ -203,8 +209,8 @@ toc:
   number: true
   expand: false
   # Only for post
-  style_simple: false
-  scroll_percent: true
+  style_simple: true
+  scroll_percent: false
 
 post_copyright:
   enable: true
@@ -239,7 +245,7 @@ related_post:
   # Number of posts displayed
   limit: 6
   # Choose: created / updated
-  date_type: created
+  date_type: updated
 
 # Choose: 1 / 2 / false
 # 1: The 'next post' will link to old post
@@ -265,8 +271,8 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2019
-  custom_text:
+    since: 2020
+  custom_text: <a href="https://icp.gov.moe/?keyword=20258836" target="_blank" style="color:#FFC0CB;">萌ICP备20258836号</a>
   # Copyright of theme and framework
   copyright: true
 
